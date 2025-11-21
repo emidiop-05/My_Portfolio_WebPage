@@ -1,0 +1,35 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1.5rem 2rem;
+  background-color: var(--app-background);
+}
+
+.logoSvg {
+  width: 60px;
+  height: 60px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--app-text);
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.5rem 0.25rem;
+}
+
+.navLink:hover {
+  color: var(--color-accent-subtle);
+  transform: translateY(-2px);
+}
