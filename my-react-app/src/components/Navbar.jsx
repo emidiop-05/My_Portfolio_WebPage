@@ -32,6 +32,27 @@ function Navbar() {
           </a>
         </li>
       </ul>
+
+      <ul className={styles.navSocial}>
+        <li className={styles.navMedia}>
+          <a
+            href="https://www.linkedin.com/in/em%C3%ADdio-pedro-b9a67b2a9/?trk=opento_sprofile_details"
+            target="_blank"
+            className={styles.navLink}
+          >
+            Linkedin
+          </a>
+        </li>
+        <li className={styles.navMedia}>
+          <a
+            href="https://github.com/emidiop-05"
+            target="_blank"
+            className={styles.navLink}
+          >
+            Github
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }
