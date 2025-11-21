@@ -1,3 +1,16 @@
+:root {
+  --color-primary: #2c2f33;
+  --color-background-light: #f5f2e9;
+  --color-text-main: var(--color-primary);
+  --color-accent-subtle: #7289da;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--color-background-light);
   color: var(--color-text-main);
@@ -6,8 +19,6 @@ body {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.logo {
+  fill: var(--color-primary);
 }

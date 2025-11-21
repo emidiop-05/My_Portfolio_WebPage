@@ -7,9 +7,9 @@ import LogoIcon from "../assets/Logo.svg?react";
 function Navbar() {
   return (
     <nav className={styles.Navbar}>
-      <Link to="/" className={styles.logoContainer}>
+      <a href="#logo" className={styles.logoContainer}>
         <LogoIcon className={styles.logoSvg} />
-      </Link>
+      </a>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
           <a href="#about-me" className={styles.navLink}>
