@@ -31,9 +31,10 @@
   text-decoration: none;
   color: var(--app-text);
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: normal;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 0.5rem 0.25rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .navLink:hover {
@@ -48,6 +49,7 @@
   font-weight: 500;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 0.5rem 0.25rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .navMedia:hover {

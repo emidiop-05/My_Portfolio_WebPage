@@ -1,3 +1,64 @@
 .Text {
   font-size: 30px;
+  padding: 2rem;
+}
+
+.FirstInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40rem;
+  align-items: start;
+  margin-bottom: 6rem;
+}
+
+.Title {
+  max-width: 660px;
+  margin-left: 5rem;
+  margin-top: 4rem;
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  line-height: 6.5rem;
+}
+
+.Name {
+  color: transparent;
+  -webkit-text-stroke: 3.5px #2c2f33;
+}
+
+.FrontDiv {
+  padding-bottom: 8rem;
+  padding-top: 4rem;
+}
+
+.StackTitle {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.FrontStacks,
+.BackStacks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Resume {
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-left: 5rem;
+  margin-bottom: 15rem;
+  transition: all 0.3s ease;
+}
+
+.Resume:hover {
+  color: var(--color-accent-subtle);
+  text-underline-offset: 4px;
+  text-decoration-color: var(--app-text);
 }
