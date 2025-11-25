@@ -1,5 +1,5 @@
 import styles from "./Main.module.css";
-
+import IconCanvas from "../components/IconCanvas";
 function MainPage() {
   return (
     <div className={styles.Text}>
@@ -17,12 +17,14 @@ function MainPage() {
             Download my resume.
           </a>
         </section>
-
         <section id="stacks">
           <div className={styles.FrontDiv}>
             <h2 className={styles.StackTitle}>Front-End</h2>
             <ul className={styles.FrontStacks}>
-              <li className={styles.StackText}>React</li>
+              <li className={styles.StackText}>
+                {" "}
+                <IconCanvas className={styles.heroIcon} />
+              </li>
               <li className={styles.StackText}>HTML</li>
               <li className={styles.StackText}>CSS</li>
             </ul>
