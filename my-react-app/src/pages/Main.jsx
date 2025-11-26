@@ -1,5 +1,13 @@
 import styles from "./Main.module.css";
-import IconCanvas from "../components/IconCanvas";
+import { IconModel } from "../components/IconModel";
+
+import { ReactIcon } from "../components/models/ReactIcon";
+import { CSSIcon } from "../components/models/CSSIcon";
+import { HtmlIcon } from "../components/models/HtmlIcon";
+
+import { MongoIcon } from "../components/models/MoongoIcon";
+import { JsIcon } from "../components/models/JsIcon";
+
 function MainPage() {
   return (
     <div className={styles.Text}>
@@ -23,17 +31,60 @@ function MainPage() {
             <ul className={styles.FrontStacks}>
               <li className={styles.StackText}>
                 {" "}
-                <IconCanvas className={styles.heroIcon} />
+                <IconModel
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                >
+                  <ReactIcon position={[0, 0, 0]} scale={1} />
+                </IconModel>
               </li>
-              <li className={styles.StackText}>HTML</li>
-              <li className={styles.StackText}>CSS</li>
+              <li className={styles.StackText}>
+                <IconModel
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                >
+                  <HtmlIcon position={[0, 0, 0]} scale={1} />
+                </IconModel>
+              </li>
+              <li className={styles.StackText}>
+                <IconModel
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                >
+                  <CSSIcon position={[0, 0, 0]} scale={1} />
+                </IconModel>
+              </li>
             </ul>
           </div>
           <div className={styles.BackDiv}>
             <h2 className={styles.StackTitle}>Back-End</h2>
             <ul className={styles.BackStacks}>
-              <li className={styles.StackText}>MongoDB</li>
-              <li className={styles.StackText}>Express.js</li>
+              <li className={styles.StackText}>
+                <IconModel
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                >
+                  <JsIcon position={[0, 0, 0]} scale={1} />
+                </IconModel>
+              </li>
+              <li className={styles.StackText}>
+                <IconModel
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                >
+                  <MongoIcon position={[0, 0, 0]} scale={1} />
+                </IconModel>
+              </li>
               <li className={styles.StackText}>Node.js</li>
             </ul>
           </div>
