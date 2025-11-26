@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { ReactIcon } from "./models/ReactIcon";
+import { CSSIcon } from "./models/CSSIcon";
 import { div } from "three/tsl";
 
 export default function IconCanvas({ className, style }) {
@@ -10,6 +11,8 @@ export default function IconCanvas({ className, style }) {
         <ambientLight intensity={0.1} />
         <directionalLight position={[3, 3, 5]} intensity={1} castShadow />
         <ReactIcon position={[0, 0, 0]} scale={1} />
+        <CSSIcon position={[-18, 0, 0]} scale={1} />
+
         <OrbitControls enableZoom={false} />
       </Canvas>
     </div>
