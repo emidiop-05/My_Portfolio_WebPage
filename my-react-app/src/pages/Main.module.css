@@ -1,3 +1,7 @@
+body {
+  background-image: "/assets/background.svg";
+}
+
 .Text {
   font-size: 30px;
   padding: 2rem;
@@ -78,6 +82,7 @@
   align-items: start;
   margin-bottom: 6rem;
   margin-left: 2rem;
+  font-family: "Inter", sans-serif;
 }
 
 .AboutP {

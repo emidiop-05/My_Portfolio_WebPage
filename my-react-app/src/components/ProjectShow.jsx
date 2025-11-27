@@ -9,7 +9,6 @@ const projects = [
     id: "platform",
     name: "PlatformGame",
     image: "/assets/PlatGameImg.png",
-    // Defined component
     component: <PlatformDetails />,
     url: "https://emidiop-05.github.io/Emidio-Pedro-Game-Ironhack-/",
     github: "https://github.com/emidiop-05/Emidio-Pedro-Game-Ironhack-",
@@ -18,7 +17,6 @@ const projects = [
     id: "fitnessworld",
     name: "Fitness-World",
     image: "/assets/FitnessWorldCover.png",
-    // Defined component
     component: <FitnessDetails />,
     url: "https://fitnesss-world.netlify.app/",
     github: "https://github.com/emidiop-05/Fitness-World-Frontend",
@@ -55,7 +53,6 @@ export function ProjectShow() {
       <div className={styles.projectContentPanel}>
         {currentProjectData && (
           <div className={styles.projectDisplayArea}>
-            {/* KEY FIX: Pass the CSS class to the child component */}
             {React.cloneElement(currentProjectData.component, {
               screenshotClass: styles.mainScreenshot,
             })}

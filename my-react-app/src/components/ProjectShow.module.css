@@ -1,5 +1,5 @@
 .projectShowcaseContainer {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 40px auto;
   margin-top: 8rem;
   padding: 20px;
@@ -69,7 +69,7 @@
   gap: 40px;
 }
 
-.project-detail-content {
+.projectDetailContent {
   flex: 2;
 }
 
@@ -79,17 +79,28 @@
 }
 
 .mainScreenshot {
-  max-height: 500px; /* <--- REDUCED MAX HEIGHT */
-
-  /* 2. Reduce Max Width (Constrains the horizontal size if it's too wide) */
-  max-width: 100%; /* <--- New max width to prevent it from filling the container */
-
-  width: auto; /* Ensures the image scales down based on the max settings */
+  max-height: 500px;
+  max-width: 100%;
+  width: 850px;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
   margin-top: 15px;
   border: 1px solid #36454f;
+}
+
+.featuresUl {
+  list-style: none;
+  font-family: "Inter";
+}
+
+.featureTitle {
+  font-family: "Poppins", sans-serif;
+}
+
+.featureText {
+  font-family: "Inter";
+  max-width: 860px;
 }
 
 .projectLinks {
@@ -107,7 +118,7 @@
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s ease;
-
+  font-family: "Inter", sans-serif;
   background-color: #6495ed;
   color: #1c1c1c;
 }
