@@ -7,6 +7,7 @@ import { HtmlIcon } from "../components/models/HtmlIcon";
 
 import { MongoIcon } from "../components/models/MoongoIcon";
 import { JsIcon } from "../components/models/JsIcon";
+import { NodeJsIcon } from "../components/models/NodeJsIcon";
 
 function MainPage() {
   return (
@@ -85,15 +86,37 @@ function MainPage() {
                   <MongoIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
-              <li className={styles.StackText}>Node.js</li>
+              <li className={styles.StackText}>
+                <IconModel
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                >
+                  <NodeJsIcon position={[0, 0, 0]} scale={1} />
+                </IconModel>
+              </li>
             </ul>
           </div>
         </section>
       </div>
       <section id="about-me">
-        <h1>HELLOW WORLD</h1>
+        <h1 className={styles.AboutTitle}>About Me</h1>
+        <p className={styles.AboutP}>
+          I am Emidio Pedro, a 20-year-old Full Stack Developer based in
+          Portugal. I specialize in the MERN stack (MongoDB, Express, React,
+          Node.js), a comprehensive skillset built upon my training at the
+          Ironhack Web Development course. I am currently working as a
+          freelancer, where I focus on delivering scalable web solutions. My
+          ongoing priority is continuous professional development; I actively
+          pursue advanced courses and learning materials to ensure my technical
+          knowledge remains sharp and current.
+        </p>
       </section>
-      <section id="experience"></section>
+      <section id="experience">
+        <h1>Experience</h1>
+        <p></p>
+      </section>
       <section id="projects"></section>
       <section id="contact-info"></section>
     </div>
