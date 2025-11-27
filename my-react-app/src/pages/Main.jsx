@@ -9,6 +9,8 @@ import { MongoIcon } from "../components/models/MoongoIcon";
 import { JsIcon } from "../components/models/JsIcon";
 import { NodeJsIcon } from "../components/models/NodeJsIcon";
 
+import { ProjectShow } from "../components/ProjectShow";
+
 function MainPage() {
   return (
     <div className={styles.Text}>
@@ -102,22 +104,28 @@ function MainPage() {
       </div>
       <section id="about-me">
         <h1 className={styles.AboutTitle}>About Me</h1>
-        <p className={styles.AboutP}>
-          I am Emidio Pedro, a 20-year-old Full Stack Developer based in
-          Portugal. I specialize in the MERN stack (MongoDB, Express, React,
-          Node.js), a comprehensive skillset built upon my training at the
-          Ironhack Web Development course. I am currently working as a
-          freelancer, where I focus on delivering scalable web solutions. My
-          ongoing priority is continuous professional development; I actively
-          pursue advanced courses and learning materials to ensure my technical
-          knowledge remains sharp and current.
-        </p>
+        <div className={styles.aboutMeContainer}>
+          <p className={styles.AboutP}>
+            I am Emidio Pedro, a 20-year-old Full Stack Developer based in
+            Portugal. I specialize in the MERN stack (MongoDB, Express, React,
+            Node.js), a comprehensive skillset built upon my training at the
+            Ironhack Web Development course. I am currently working as a
+            freelancer, where I focus on delivering scalable web solutions. My
+            ongoing priority is continuous professional development; I actively
+            pursue advanced courses and learning materials to ensure my
+            technical knowledge remains sharp and current.
+          </p>
+          <img
+            className={styles.imagePorto}
+            src="/assets/imagePorto.jpg"
+            alt=""
+          />
+        </div>
       </section>
-      <section id="experience">
-        <h1>Experience</h1>
-        <p></p>
+      <section id="projects">
+        <ProjectShow />
       </section>
-      <section id="projects"></section>
+      <section id="experience"></section>
       <section id="contact-info"></section>
     </div>
   );

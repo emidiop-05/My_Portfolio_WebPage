@@ -71,9 +71,23 @@
   margin-bottom: 2rem;
 }
 
+.aboutMeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rem;
+  align-items: start;
+  margin-bottom: 6rem;
+  margin-left: 2rem;
+}
+
 .AboutP {
   color: var(--color-primary);
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  max-width: 50rem;
+}
+
+.imagePorto {
+  max-width: 800px;
 }
