@@ -11,6 +11,7 @@ import { NodeJsIcon } from "../components/models/NodeJsIcon";
 
 import { ProjectShow } from "../components/ProjectShow";
 import { CertShow } from "../components/CertShow";
+import { ContactMe } from "../components/ContactMe";
 
 function MainPage() {
   return (
@@ -134,15 +135,18 @@ function MainPage() {
         <div className={styles.ContactPull}>
           <div className={styles.ContactEmail}>
             <h2 className={styles.ContactEmailTitle}>
-              You can contact me by email:
+              You can contact me by email:{" "}
+              <span className={styles.ContactEmailPara}>
+                emidiop44@gmail.com
+              </span>
             </h2>
-            <p className={styles.ContactEmailPara}>emidiop44@gmail.com</p>
+
             <p className={styles.ContactMessagePara}>
               or Send a message via this form
             </p>
           </div>
           <div>
-            <h2 className={styles.ContactInfo}>Contact:</h2>
+            <ContactMe />
           </div>
         </div>
       </section>

@@ -20,7 +20,6 @@ body {
 body {
   background-image: url("/assets/background.svg");
   background-repeat: repeat;
-
   animation: slow-pan 60s linear infinite alternate;
   margin: 0;
   padding: 0;

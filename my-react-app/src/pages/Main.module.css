@@ -77,12 +77,11 @@ body {
   text-decoration-color: var(--app-text);
 }
 
-.AboutTitle,
-.CertTitle {
+.AboutTitle {
   font-size: 80px;
   font-family: "Poppins", sans-serif;
   line-height: 6.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #2c2f33;
   padding-left: 2rem;
 }
@@ -99,7 +98,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
   align-items: start;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   margin-left: 2rem;
   font-family: "Inter", sans-serif;
   padding: 2rem;
@@ -128,7 +127,49 @@ body {
 
 .sectionBlackBg {
   background-image: url("/assets/background.svg");
-  filter: invert(94%);
-  margin: 0;
-  padding: 0;
+  filter: invert(98%);
+  animation: slow-pan 80s linear infinite alternate;
+  background-repeat: repeat;
+}
+
+@keyframes slow-pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 15% 15%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.ContactPull {
+  padding-left: 18rem;
+  padding-right: 18rem;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+  align-items: start;
+}
+
+.ContactEmailTitle {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #1e1d1d;
+}
+
+.ContactEmailPara {
+  font-family: "inter";
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  line-height: -1.5rem;
+}
+
+.ContactMessagePara {
+  font-family: "inter";
+  padding-top: 1rem;
 }
