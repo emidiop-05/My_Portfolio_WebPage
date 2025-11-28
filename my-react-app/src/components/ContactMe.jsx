@@ -41,7 +41,6 @@ export const ContactMe = () => {
 
   return (
     <div>
-      <h2 className={styles.ContactInfo}>Contact:</h2>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <div className={styles.inputRow}>
           <input

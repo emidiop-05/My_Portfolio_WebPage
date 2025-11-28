@@ -30,8 +30,6 @@ export function ProjectShow() {
 
   return (
     <div className={styles.projectShowcaseContainer}>
-      <h2>Featured Projects</h2>
-
       <div className={styles.tabNavigationRow}>
         {projects.map((project) => (
           <button

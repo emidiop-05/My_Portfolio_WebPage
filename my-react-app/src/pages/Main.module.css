@@ -3,7 +3,7 @@ body {
 }
 
 .imagePorto {
-  max-width: 800px;
+  max-width: 500px;
 }
 
 .Text {
@@ -11,21 +11,22 @@ body {
 }
 
 .FirstInfo {
-  padding: 2rem;
+  padding: 1rem;
+  padding-left: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40rem;
+  gap: 30rem;
   align-items: start;
   margin-bottom: 6rem;
 }
 
 .Title {
-  max-width: 660px;
+  max-width: 460px;
   margin-left: 5rem;
-  margin-top: 5rem;
-  font-size: 100px;
+  margin-top: 3rem;
+  font-size: 80px;
   font-family: "Poppins", sans-serif;
-  line-height: 6.5rem;
+  line-height: 5rem;
 }
 
 .Name {
@@ -34,9 +35,9 @@ body {
 }
 
 .FrontDiv {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   padding-left: 2rem;
-  padding-top: 4rem;
+  padding-top: 2.5rem;
 }
 
 .BackDiv {
@@ -46,6 +47,8 @@ body {
 .StackTitle {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-right: 7.4rem;
 }
 
 .FrontStacks,
@@ -78,51 +81,30 @@ body {
 }
 
 .AboutTitle {
-  font-size: 80px;
-  font-family: "Poppins", sans-serif;
-  line-height: 6.5rem;
-  margin-bottom: 1rem;
-  color: #2c2f33;
-  padding-left: 2rem;
-}
-
-.CertSubT {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   line-height: 6.5rem;
   color: #2c2f33;
+  padding-left: 3rem;
 }
 
 .aboutMeContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10rem;
+  gap: 18rem;
   align-items: start;
   margin-bottom: 1rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
   font-family: "Inter", sans-serif;
-  padding: 2rem;
 }
 
 .AboutP {
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  min-width: 49rem;
-}
-
-.CertP {
-  color: var(--color-primary);
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  padding-bottom: 3rem;
-  color: #2c2f33;
-}
-
-.CertTitle {
-  padding-top: 10rem;
+  min-width: 40rem;
+  padding-top: 2rem;
 }
 
 .sectionBlackBg {
@@ -155,7 +137,7 @@ body {
 }
 
 .ContactEmailTitle {
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
   color: #1e1d1d;
 }
@@ -167,9 +149,11 @@ body {
   text-decoration-thickness: 3px;
   text-underline-offset: 6px;
   line-height: -1.5rem;
+  font-size: 25px;
 }
 
 .ContactMessagePara {
   font-family: "inter";
   padding-top: 1rem;
+  font-size: 20px;
 }

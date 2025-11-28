@@ -58,7 +58,7 @@ export function CertShow() {
             <h3>
               {activeItem.id === "ironHackCert"
                 ? "Ironhack Bootcamp"
-                : "freeCodeCamp RWD"}
+                : "FreeCodeCamp RWD"}
             </h3>
             <p>{activeItem.text}</p>
           </div>
