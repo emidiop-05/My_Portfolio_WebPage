@@ -2,12 +2,16 @@ body {
   background-image: "/assets/background.svg";
 }
 
+.imagePorto {
+  max-width: 800px;
+}
+
 .Text {
   font-size: 30px;
-  padding: 2rem;
 }
 
 .FirstInfo {
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40rem;
@@ -18,7 +22,7 @@ body {
 .Title {
   max-width: 660px;
   margin-left: 5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
   font-size: 100px;
   font-family: "Poppins", sans-serif;
   line-height: 6.5rem;
@@ -31,7 +35,12 @@ body {
 
 .FrontDiv {
   padding-bottom: 8rem;
+  padding-left: 2rem;
   padding-top: 4rem;
+}
+
+.BackDiv {
+  padding-left: 2rem;
 }
 
 .StackTitle {
@@ -58,7 +67,7 @@ body {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   margin-left: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   transition: all 0.3s ease;
 }
 
@@ -68,21 +77,32 @@ body {
   text-decoration-color: var(--app-text);
 }
 
-.AboutTitle {
+.AboutTitle,
+.CertTitle {
   font-size: 80px;
   font-family: "Poppins", sans-serif;
   line-height: 6.5rem;
   margin-bottom: 2rem;
+  color: #2c2f33;
+  padding-left: 2rem;
+}
+
+.CertSubT {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  line-height: 6.5rem;
+  color: #2c2f33;
 }
 
 .aboutMeContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20rem;
+  gap: 10rem;
   align-items: start;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   margin-left: 2rem;
   font-family: "Inter", sans-serif;
+  padding: 2rem;
 }
 
 .AboutP {
@@ -90,9 +110,25 @@ body {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  max-width: 50rem;
+  min-width: 49rem;
 }
 
-.imagePorto {
-  max-width: 800px;
+.CertP {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 3rem;
+  color: #2c2f33;
+}
+
+.CertTitle {
+  padding-top: 10rem;
+}
+
+.sectionBlackBg {
+  background-image: url("/assets/background.svg");
+  filter: invert(94%);
+  margin: 0;
+  padding: 0;
 }

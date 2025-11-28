@@ -17,13 +17,13 @@ function Navbar() {
           </a>
         </li>
         <li className={styles.navItem}>
-          <a href="#experience" className={styles.navLink}>
-            Experience
+          <a href="#projects" className={styles.navLink}>
+            Projects
           </a>
         </li>
         <li className={styles.navItem}>
-          <a href="#projects" className={styles.navLink}>
-            Projects
+          <a href="#certifications" className={styles.navLink}>
+            Certifications
           </a>
         </li>
         <li className={styles.navItem}>

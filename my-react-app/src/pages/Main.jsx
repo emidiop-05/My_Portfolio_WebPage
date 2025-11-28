@@ -10,6 +10,7 @@ import { JsIcon } from "../components/models/JsIcon";
 import { NodeJsIcon } from "../components/models/NodeJsIcon";
 
 import { ProjectShow } from "../components/ProjectShow";
+import { CertShow } from "../components/CertShow";
 
 function MainPage() {
   return (
@@ -103,7 +104,7 @@ function MainPage() {
         </section>
       </div>
       <section id="about-me">
-        <h1 className={styles.AboutTitle}>About Me</h1>
+        <h2 className={styles.AboutTitle}>About Me</h2>
         <div className={styles.aboutMeContainer}>
           <p className={styles.AboutP}>
             I am Emidio Pedro, a 20-year-old Full Stack Developer based in
@@ -122,11 +123,29 @@ function MainPage() {
           />
         </div>
       </section>
+      <section id="certifications">
+        <CertShow />
+      </section>
       <section id="projects">
         <ProjectShow />
       </section>
-      <section id="experience"></section>
-      <section id="contact-info"></section>
+
+      <section className={styles.sectionBlackBg} id="contact-info">
+        <div className={styles.ContactPull}>
+          <div className={styles.ContactEmail}>
+            <h2 className={styles.ContactEmailTitle}>
+              You can contact me by email:
+            </h2>
+            <p className={styles.ContactEmailPara}>emidiop44@gmail.com</p>
+            <p className={styles.ContactMessagePara}>
+              or Send a message via this form
+            </p>
+          </div>
+          <div>
+            <h2 className={styles.ContactInfo}>Contact:</h2>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
