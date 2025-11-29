@@ -1,5 +1,3 @@
-import { div } from "three/tsl";
-
 import styles from "../ProjectShow.module.css";
 
 export function PlatformDetails() {
@@ -12,7 +10,7 @@ export function PlatformDetails() {
         management.
       </p>
 
-      <h4>Tech Stack:</h4>
+      <h4 className={styles.featuresUlTitle}>Tech Stack:</h4>
       <ul className={styles.featuresUl}>
         <li>Frontend: Vanilla JavaScript, HTML5, CSS3</li>
       </ul>
