@@ -1,7 +1,8 @@
 .imageButtonsRow {
+  padding-top: 12vh;
   display: flex;
   justify-content: center;
-  gap: 220px;
+  gap: 10vw;
   margin-bottom: 30px;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .toggleImage {
-  width: 400px;
+  width: 40vw;
   height: auto;
   object-fit: cover;
   display: block;
@@ -34,57 +35,11 @@
 }
 
 .textDisplayArea {
-  min-height: 150px;
+  min-height: 15vh;
   padding: 20px;
   color: #2c2f33;
   font-family: "Inter", sans-serif;
   max-width: 120rem;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .imageButtonsRow {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-    margin-bottom: 30px;
-  }
-
-  .imageButton {
-    background: none;
-    border: 3px solid transparent;
-    cursor: pointer;
-    padding: 5px;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    margin-top: 5rem;
-  }
-
-  .imageButton:hover {
-    opacity: 0.8;
-  }
-
-  .imageButton.active {
-    border-color: #2c2f33;
-    opacity: 1;
-    box-shadow: 0 0 10px rgba(100, 149, 237, 0.5);
-  }
-
-  .toggleImage {
-    width: 40vw;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 4px;
-  }
-
-  .textDisplayArea {
-    min-height: 15vh;
-    padding: 20px;
-    color: #2c2f33;
-    font-family: "Inter", sans-serif;
-    max-width: 120rem;
-    text-align: center;
-    font-size: 4vh;
-  }
+  font-size: 4vh;
 }

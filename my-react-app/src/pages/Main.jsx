@@ -30,38 +30,23 @@ function MainPage() {
             Download my resume.
           </a>
         </section>
-        <section id="stacks">
+        <section className={styles.StacksContainer} id="stacks">
           <div className={styles.FrontDiv}>
             <h2 className={styles.StackTitle}>Front-End</h2>
             <ul className={styles.FrontStacks}>
               <li className={styles.StackText}>
                 {" "}
-                <IconModel
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                >
+                <IconModel className={styles.Icon3D}>
                   <ReactIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
               <li className={styles.StackText}>
-                <IconModel
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                >
+                <IconModel className={styles.Icon3D}>
                   <HtmlIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
               <li className={styles.StackText}>
-                <IconModel
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                >
+                <IconModel className={styles.Icon3D}>
                   <CSSIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
@@ -71,32 +56,17 @@ function MainPage() {
             <h2 className={styles.StackTitle}>Back-End</h2>
             <ul className={styles.BackStacks}>
               <li className={styles.StackText}>
-                <IconModel
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                >
+                <IconModel className={styles.Icon3D}>
                   <JsIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
               <li className={styles.StackText}>
-                <IconModel
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                >
+                <IconModel className={styles.Icon3D}>
                   <MongoIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
               <li className={styles.StackText}>
-                <IconModel
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                  }}
-                >
+                <IconModel className={styles.Icon3D}>
                   <NodeJsIcon position={[0, 0, 0]} scale={1} />
                 </IconModel>
               </li>
@@ -117,11 +87,14 @@ function MainPage() {
             pursue advanced courses and learning materials to ensure my
             technical knowledge remains sharp and current.
           </p>
-          <img
-            className={styles.imagePorto}
-            src="/assets/imagePorto.jpg"
-            alt=""
-          />
+
+          <div className={styles.imagePortoWrapper}>
+            <img
+              className={styles.imagePortoContent}
+              src="/assets/imagePorto.jpg"
+              alt="Portfolio"
+            />
+          </div>
         </div>
       </section>
       <section id="certifications">
