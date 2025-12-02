@@ -49,6 +49,7 @@ body {
   font-size: 80px;
   font-family: "Poppins", sans-serif;
   line-height: 5rem;
+  color: #2c2f33;
 }
 
 .Name {
@@ -428,5 +429,63 @@ body {
     font-family: "inter";
     padding-top: 1rem;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .FirstInfo {
+    padding-left: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    align-items: start;
+    margin-bottom: 10vh;
+  }
+
+  .Title {
+    max-width: 480px;
+    margin-left: 3vw;
+    margin-top: 2.5vh;
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+    line-height: 4.9rem;
+  }
+
+  .Name {
+    color: transparent;
+    -webkit-text-stroke: 2.5px #2c2f33;
+    font-size: 80px;
+  }
+
+  .Icon3D {
+    width: 10vw;
+    height: 10vh;
+  }
+
+  .AboutTitle {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 10vh;
+    color: #2c2f33;
+    padding-left: 2vw;
+  }
+
+  .aboutMeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    align-items: start;
+    margin-bottom: 1rem;
+    font-family: "Inter", sans-serif;
+  }
+
+  .AboutP {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    min-width: 20vw;
+    padding-top: 2vh;
+    margin-left: 2vw;
   }
 }
